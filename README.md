@@ -1,6 +1,6 @@
 # .github
 
-Defaults for every repository in the aiviarium organisation.
+Defaults for every repository in the Aiviarium organisation.
 
 | Path | What it does |
 | --- | --- |
