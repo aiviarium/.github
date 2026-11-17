@@ -54,5 +54,5 @@ Append what it prints to the address of a shields.io badge:
 ![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-x?style=flat&labelColor=18181B&color=E879F9&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI%2BPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTEpIHNjYWxlKC4zOSkiIGZpbGw9IiNFODc5RjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU5IDEyIEM4MCA5IDEwMyA0OCAxMDUgNzUgQzEwNyA5OSA5MSAxMTQgNjggMTE2IEM0MyAxMTggMjQgMTA1IDIyIDgyIEMyMCA1NSAzOCAxNSA1OSAxMloiLz48cGF0aCBmaWxsPSIjNjczNTcxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDI5TDE1IDI0TDE5IDI1TDI0IDE5TDI4IDIxTDMyIDE1TDM5IDE2TDMzIDE5TDMwIDI1TDI1IDIzTDIwIDI5TDE1IDI3WiIvPjwvc3ZnPg%3D%3D)
 ```
 
-The address holds the icon itself. Run the script again after a change to an
+The icon is encoded in the address. Run the script again after a change to an
 icon.
