@@ -23,7 +23,7 @@ jobs:
       # fails the check too.
       - name: Prose
         run: |
-          found=$(vale --minAlertLevel=warning --output=line ./*.md profile .github/*.md) || true
+          found=$(vale --minAlertLevel=warning --output=line ./*.md profile brand/README.md .github/*.md) || true
           [ -z "$found" ] || { echo "$found"; exit 1; }
       - name: The issue forms and labels parse
         run: |

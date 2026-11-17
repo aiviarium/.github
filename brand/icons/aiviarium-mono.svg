@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs><clipPath id="bars"><path clip-rule="evenodd" d="M-4 -4H132V132H-4Z M35 94L49 76Q54 70 60 69Q65 55 77 60Q82 62 82 66L91 72L81 77Q78 88 63 89L55 89L46 96Z"/></clipPath></defs>
+  <g clip-path="url(#bars)"><path fill="none" stroke="currentColor" stroke-width="2" d="M45 24 C34 41 34 64 34 99"/><path fill="none" stroke="currentColor" stroke-width="2" d="M56 20 C48 37 48 65 48 101"/><path fill="none" stroke="currentColor" stroke-width="2" d="M71 20 C81 39 81 65 81 101"/><path fill="none" stroke="currentColor" stroke-width="2" d="M82 24 C95 41 95 67 95 99"/></g><path fill="currentColor" fill-rule="evenodd" d="M16 99 L16 63 C16 41 31 22 53 17 L59 15 L69 15 L75 17 C97 22 112 41 112 63 L112 99 L106 99 L106 63 C106 41 90 22 64 20 C38 22 22 41 22 63 L22 99Z"/>
+  <path fill="currentColor" fill-rule="evenodd" d="M14 60 C39 55 89 55 114 60 L114 64 C89 60 39 60 14 64Z"/>
+  <path fill="currentColor" fill-rule="evenodd" d="M56 17 C57 15 60 14 61 12 C58 9 60 6 64 5 C68 6 70 9 67 12 C68 14 71 15 72 17 C68 19 60 19 56 17Z"/>
+  <path fill="currentColor" fill-rule="evenodd" d="M21 95 C45 91 74 87 106 82 L106 85 C74 90 45 94 21 98Z"/>
+  <path fill="currentColor" fill-rule="evenodd" d="M40 93 L51 78 C55 72 60 74 63 68 C66 61 75 61 78 69 L85 72 L78 74 C76 84 70 86 62 86 L61 90 L58 91 L59 86 L55 85 L44 94 L47 88Z M48 86Q57 72 68 72Q63 82 48 86Z M71 68a2 2 0 1 0 4 0a2 2 0 1 0 -4 0Z"/>
+  <path fill="currentColor" fill-rule="evenodd" d="M13 96 C39 91 89 91 115 96 L113 103 C109 110 92 115 64 116 C36 115 19 110 15 103Z M18 98Q64 105 110 98Q71 111 18 98Z"/>
+</svg>
