@@ -1,0 +1,33 @@
+name: Bug
+description: Something that works wrongly, or that used to work and doesn't any more
+type: Bug
+labels: [needs triage]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, what you expected and what you got. Your own words are best, even if short.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The relevant output. Take addresses, tokens and passwords out first.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What `--version` prints, or the commit you built from.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Where it runs
+      options:
+        - Linux
+        - macOS
+        - Windows

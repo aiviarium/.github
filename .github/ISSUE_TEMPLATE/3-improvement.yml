@@ -1,0 +1,25 @@
+name: Improvement
+description: Something the project does already, but that could be easier, faster or clearer
+type: Improvement
+labels: [needs triage]
+body:
+  - type: textarea
+    id: now
+    attributes:
+      label: What it does now
+      description: What you did and what got in the way, in your own words.
+    validations:
+      required: true
+  - type: textarea
+    id: better
+    attributes:
+      label: What would be better
+      description: How it would work instead.
+    validations:
+      required: true
+  - type: checkboxes
+    id: work
+    attributes:
+      label: Who does it
+      options:
+        - label: I'd like to write this myself

@@ -1,0 +1,34 @@
+name: Feature
+description: Something the project can't do at all yet. This comes before the pull request.
+type: Feature
+labels: [needs triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the project's contributing guide first, in particular what the project is and isn't. Keep one issue to one change. If the project does this already but could do it better, use **Improvement**. For an agent, tool or service, use **Integration**.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you ran into
+      description: The situation that made you want this, in your own words.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What you propose
+      description: What the project would do that it can't do now.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in and what is left out. Smaller is better.
+  - type: checkboxes
+    id: work
+    attributes:
+      label: Who does it
+      options:
+        - label: I'd like to write this myself

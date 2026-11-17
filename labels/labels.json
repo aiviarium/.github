@@ -1,0 +1,82 @@
+[
+  {
+    "name": "accessibility",
+    "color": "f143ab",
+    "description": "Barrier affecting people with disabilities"
+  },
+  {
+    "name": "duplicate",
+    "color": "cfd3d7",
+    "description": "This issue or pull request already exists"
+  },
+  {
+    "name": "help wanted",
+    "color": "008672",
+    "description": "Extra attention is needed"
+  },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "Good for newcomers"
+  },
+  {
+    "name": "out of scope",
+    "color": "cfd3d7",
+    "description": "Doesn't fit what the project is"
+  },
+  {
+    "name": "dependencies",
+    "color": "0366d6",
+    "description": "Pull requests that update a dependency file"
+  },
+  {
+    "name": "area: project",
+    "color": "1d76db",
+    "description": "CI, tests, releases, contributing"
+  },
+  {
+    "name": "needs info",
+    "color": "fbca04",
+    "description": "Waiting for the reporter"
+  },
+  {
+    "name": "needs triage",
+    "color": "fbca04",
+    "description": "Nobody has looked at it yet"
+  },
+  {
+    "name": "accepted",
+    "color": "0e8a16",
+    "description": "Belongs in the project; a pull request is welcome"
+  },
+  {
+    "name": "blocked",
+    "color": "b60205",
+    "description": "Waits on another issue or upstream"
+  },
+  {
+    "name": "plugin candidate",
+    "color": "c5def5",
+    "description": "Would work better as a plugin"
+  },
+  {
+    "name": "ux",
+    "color": "d4c5f9",
+    "description": "How using it feels"
+  },
+  {
+    "name": "hardening",
+    "color": "d4c5f9",
+    "description": "Harder to misuse or attack"
+  },
+  {
+    "name": "performance",
+    "color": "d4c5f9",
+    "description": "Slow, heavy or wasteful"
+  },
+  {
+    "name": "breaking",
+    "color": "b60205",
+    "description": "Not backwards compatible"
+  }
+]
