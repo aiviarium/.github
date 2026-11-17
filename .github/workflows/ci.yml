@@ -1,0 +1,32 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  # The check that branch protection can require.
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      VALE_VERSION: 3.25.1
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install Vale
+        run: |
+          curl -fsSL "https://github.com/errata-ai/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz" \
+            | tar -xz -C "$RUNNER_TEMP" vale
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+      # Vale exits with an error only for alerts at error level. A warning
+      # fails the check too.
+      - name: Prose
+        run: |
+          found=$(vale --minAlertLevel=warning --output=line ./*.md profile .github/*.md) || true
+          [ -z "$found" ] || { echo "$found"; exit 1; }
+      - name: The issue forms and labels parse
+        run: |
+          ruby -ryaml -e 'ARGV.each { |f| YAML.load_file(f) }' .github/ISSUE_TEMPLATE/*.yml
+          python3 -m json.tool labels/labels.json > /dev/null
+          python3 -m json.tool labels/ruleset-main.json > /dev/null

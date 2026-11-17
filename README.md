@@ -8,16 +8,17 @@ Defaults for every repository in the aiviarium organisation.
 | `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md` | Used by a repository that has no file of that name |
 | `.github/ISSUE_TEMPLATE/` | The issue forms of a repository that has no `ISSUE_TEMPLATE` folder |
 | `.github/PULL_REQUEST_TEMPLATE.md` | The same for pull requests |
+| `.vale/`, `.vale.ini` | The prose rules every repository of the organisation uses, checked here by CI |
 | `labels/` | The shared labels, the script that applies them and the ruleset for `main` |
 
-A repository's own file always wins. Issue forms are all or nothing: a
+A file in a repository replaces the one here. Issue forms are all or nothing: a
 repository with any form of its own gets none of these.
 
 ## Issue types
 
 The forms set an issue type. The organisation has Bug, Feature, Task,
 Improvement, Integration, Documentation, Question and Tracking. Types are set
-up under the organisation's settings, not in this repository.
+up under the organisation's settings.
 
 ## Labels
 
@@ -31,8 +32,9 @@ beside them.
 
 ## Ruleset
 
-`labels/ruleset-main.json` is the ruleset for the default branch: no deletion,
-no force push, changes through a pull request, and the `ci` check has to pass.
+`labels/ruleset-main.json` is the ruleset for the default branch. The branch
+can't be deleted or force-pushed. Changes go through a pull request, and the
+`ci` check has to pass.
 Apply it to a repository with:
 
 ```sh
