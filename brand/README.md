@@ -18,9 +18,8 @@ A project has one colour, which its icon, its wordmark and its badges use.
 | `icons/` | Each icon in full detail, reduced for 24 to 48 px (`-icon`) and for 16 px (`-16`), each for dark and light (`-light`) backgrounds and in one colour (`-mono`) |
 | `wordmarks/` | Each name as outlines, for dark and light backgrounds and in one colour |
 | `lockups/` | Icon and wordmark together, side by side, stacked, and at text size (`-text`) with the reduced icon |
-| `badges/` | The badges the projects use, made by `tools/badges.sh` |
-| `fonts/` | Inter and Bricolage Grotesque with their licenses, which the tools read |
-| `tools/` | `badge.py` draws one badge, and `badges.sh` writes the usual set |
+| `fonts/` | Bricolage Grotesque, the typeface of the wordmarks, with its license |
+| `tools/` | `shield.sh` prints the badge settings of a project |
 
 ## A name as an image
 
@@ -39,32 +38,21 @@ Use a height of 34 for a name in running text and 56 for the heading of a page.
 
 ## Badges
 
-A badge has the project's icon and a label on a dark field. A value, when it
-has one, is on the project's colour. One badge works on dark and light pages.
+Badges come from [shields.io](https://shields.io), so they can show a release,
+the state of CI or any other value it offers. A project's badge has its icon
+on a dark label and the value on the project's colour. `tools/shield.sh`
+prints the query string that does this:
 
 ```bash
-pip install fonttools brotli
-brand/tools/badge.py hatchery license "MIT OR Apache-2.0" -o hatchery-license.svg
-brand/tools/badge.py aiviarium Aiviarium Hatchery --value-colour hatchery -o hatchery-family.svg
+brand/tools/shield.sh hatchery
 ```
 
-| Badge | File | Use |
-| --- | --- | --- |
-| Name | `badges/<project>.svg` | Marks something as belonging to the project |
-| Family | `badges/<project>-family.svg` | At the top of a project's README, linked to the organisation |
-| State | `badges/<project>-state.svg` | On the organisation's page |
-| License | `badges/<project>-license.svg` | At the top of a project's README |
-
-In Markdown:
+Append what it prints to the address of a shields.io badge:
 
 ```markdown
-[![Aiviarium: Hatchery](https://raw.githubusercontent.com/aiviarium/.github/main/brand/badges/hatchery-family.svg)](https://github.com/aiviarium)
+![Release](https://img.shields.io/github/v/release/aiviarium/hatchery?style=flat&labelColor=18181B&color=E879F9&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI%2BPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTEpIHNjYWxlKC4zOSkiIGZpbGw9IiNFODc5RjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU5IDEyIEM4MCA5IDEwMyA0OCAxMDUgNzUgQzEwNyA5OSA5MSAxMTQgNjggMTE2IEM0MyAxMTggMjQgMTA1IDIyIDgyIEMyMCA1NSAzOCAxNSA1OSAxMloiLz48cGF0aCBmaWxsPSIjNjczNTcxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDI5TDE1IDI0TDE5IDI1TDI0IDE5TDI4IDIxTDMyIDE1TDM5IDE2TDMzIDE5TDMwIDI1TDI1IDIzTDIwIDI5TDE1IDI3WiIvPjwvc3ZnPg%3D%3D)
+![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-x?style=flat&labelColor=18181B&color=E879F9&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI%2BPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTEpIHNjYWxlKC4zOSkiIGZpbGw9IiNFODc5RjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU5IDEyIEM4MCA5IDEwMyA0OCAxMDUgNzUgQzEwNyA5OSA5MSAxMTQgNjggMTE2IEM0MyAxMTggMjQgMTA1IDIyIDgyIEMyMCA1NSAzOCAxNSA1OSAxMloiLz48cGF0aCBmaWxsPSIjNjczNTcxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDI5TDE1IDI0TDE5IDI1TDI0IDE5TDI4IDIxTDMyIDE1TDM5IDE2TDMzIDE5TDMwIDI1TDI1IDIzTDIwIDI5TDE1IDI3WiIvPjwvc3ZnPg%3D%3D)
 ```
 
-A badge whose value changes, such as a release or the state of CI, comes from
-shields.io with the same colours. Set `labelColor=18181B` and `color=` to the
-project's colour on dark, without the `#`:
-
-```markdown
-![Release](https://img.shields.io/github/v/release/aiviarium/hatchery?style=flat&labelColor=18181B&color=E879F9)
-```
+The address holds the icon itself. Run the script again after a change to an
+icon.
