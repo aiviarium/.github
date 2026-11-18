@@ -19,7 +19,6 @@ A project has one colour, which its icon, its wordmark and its badges use.
 | `wordmarks/` | Each name as outlines, for dark and light backgrounds and in one colour |
 | `lockups/` | Icon and wordmark together, side by side, stacked, and at text size (`-text`) with the reduced icon |
 | `fonts/` | Bricolage Grotesque, the typeface of the wordmarks, with its license |
-| `tools/` | `shield.sh` prints the badge settings of a project |
 
 ## A name as an image
 
@@ -38,21 +37,11 @@ Use a height of 34 for a name in running text and 56 for the heading of a page.
 
 ## Badges
 
-Badges come from [shields.io](https://shields.io), so they can show a release,
-the state of CI or any other value it offers. A project's badge has its icon
-on a dark label and the value on the project's colour. `tools/shield.sh`
-prints the query string that does this:
-
-```bash
-brand/tools/shield.sh hatchery
-```
-
-Append what it prints to the address of a shields.io badge:
+Badges come from [aiviarium/badges](https://github.com/aiviarium/badges). It draws a badge with the project's icon and colour, and takes the label and value from any shields.io badge:
 
 ```markdown
-![Release](https://img.shields.io/github/v/release/aiviarium/hatchery?style=flat&labelColor=18181B&color=E879F9&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI%2BPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTEpIHNjYWxlKC4zOSkiIGZpbGw9IiNFODc5RjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU5IDEyIEM4MCA5IDEwMyA0OCAxMDUgNzUgQzEwNyA5OSA5MSAxMTQgNjggMTE2IEM0MyAxMTggMjQgMTA1IDIyIDgyIEMyMCA1NSAzOCAxNSA1OSAxMloiLz48cGF0aCBmaWxsPSIjNjczNTcxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDI5TDE1IDI0TDE5IDI1TDI0IDE5TDI4IDIxTDMyIDE1TDM5IDE2TDMzIDE5TDMwIDI1TDI1IDIzTDIwIDI5TDE1IDI3WiIvPjwvc3ZnPg%3D%3D)
-![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-x?style=flat&labelColor=18181B&color=E879F9&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI%2BPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTEpIHNjYWxlKC4zOSkiIGZpbGw9IiNFODc5RjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU5IDEyIEM4MCA5IDEwMyA0OCAxMDUgNzUgQzEwNyA5OSA5MSAxMTQgNjggMTE2IEM0MyAxMTggMjQgMTA1IDIyIDgyIEMyMCA1NSAzOCAxNSA1OSAxMloiLz48cGF0aCBmaWxsPSIjNjczNTcxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDI5TDE1IDI0TDE5IDI1TDI0IDE5TDI4IDIxTDMyIDE1TDM5IDE2TDMzIDE5TDMwIDI1TDI1IDIzTDIwIDI5TDE1IDI3WiIvPjwvc3ZnPg%3D%3D)
+![Release](https://aiviarium-badges.helight.workers.dev/hatchery/github/v/release/aiviarium/hatchery)
+![State](https://aiviarium-badges.helight.workers.dev/hatchery/badge/state-in%20development-x)
 ```
 
-The icon is encoded in the address. Run the script again after a change to an
-icon.
+`/hatchery` alone gives the name, and `/hatchery?facet` gives it as the wordmark. The README of that repository lists the rest.

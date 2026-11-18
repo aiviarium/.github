@@ -9,7 +9,7 @@ Defaults for every repository in the Aiviarium organisation.
 | `.github/ISSUE_TEMPLATE/` | The issue forms of a repository that has no `ISSUE_TEMPLATE` folder |
 | `.github/PULL_REQUEST_TEMPLATE.md` | The same for pull requests |
 | `.vale/`, `.vale.ini` | The prose rules every repository of the organisation uses, checked here by CI |
-| `brand/` | The icons, wordmarks, lockups and badge settings of the organisation and its projects |
+| `brand/` | The icons, wordmarks, lockups of the organisation and its projects |
 | `labels/` | The shared labels, the script that applies them and the ruleset for `main` |
 
 A file in a repository replaces the one here. Issue forms are all or nothing: a
