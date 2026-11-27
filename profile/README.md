@@ -8,15 +8,15 @@ Tools for managing modern development workflows and modular software.
     <td>Provisioning and management for development machines.<br><img src="https://aiviarium-badges.helight.workers.dev/rookery/badge/state-moving%20here-x" alt="moving here" height="22"></td>
   </tr>
   <tr>
-    <td width="230"><a href="https://github.com/aiviarium"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-parrot-text.svg"><img src="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-parrot-text-light.svg" alt="Parrot" height="34"></picture></a></td>
-    <td>Adapters and automation for AI coding tools.<br><img src="https://aiviarium-badges.helight.workers.dev/parrot/badge/state-moving%20here-x" alt="moving here" height="22"></td>
-  </tr>
-  <tr>
     <td width="230"><a href="https://github.com/aiviarium"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-crow-text.svg"><img src="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-crow-text-light.svg" alt="Crow" height="34"></picture></a></td>
     <td>An application framework for a team's internal tools.<br><img src="https://aiviarium-badges.helight.workers.dev/crow/badge/state-not%20public%20yet-x" alt="not public yet" height="22"></td>
   </tr>
   <tr>
-    <td width="230"><a href="https://github.com/aiviarium/hatchery"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-hatchery-text.svg"><img src="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-hatchery-text-light.svg" alt="Hatchery" height="34"></picture></a></td>
-    <td>Packaging and distribution for plugins and modular software.<br><img src="https://aiviarium-badges.helight.workers.dev/hatchery/badge/state-in%20development-x" alt="in development" height="22"></td>
+    <td width="230"><a href="https://github.com/aiviarium/heron"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-heron-text.svg"><img src="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-heron-text-light.svg" alt="Heron" height="34"></picture></a></td>
+    <td>A specification system.<br><img src="https://aiviarium-badges.helight.workers.dev/heron/badge/state-in%20development-x" alt="in development" height="22"></td>
+  </tr>
+  <tr>
+    <td width="230"><a href="https://github.com/aiviarium"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-sparrow-text.svg"><img src="https://raw.githubusercontent.com/aiviarium/.github/main/brand/lockups/lockup-sparrow-text-light.svg" alt="Sparrow" height="34"></picture></a></td>
+    <td>A binary RPC system.<br><img src="https://aiviarium-badges.helight.workers.dev/sparrow/badge/state-not%20public%20yet-x" alt="not public yet" height="22"></td>
   </tr>
 </table>
