@@ -20,6 +20,8 @@ A project has one colour, which its icon, its wordmark and its badges use.
 | `lockups/` | Icon and wordmark together, side by side, stacked, and at text size (`-text`) with the reduced icon |
 | `fonts/` | Bricolage Grotesque, the typeface of the wordmarks, with its license |
 
+To add a project, follow [the brief for a new project's marks](BRIEF.md).
+
 ## A name as an image
 
 GitHub shows a README in its own typeface. Where a project's name should look
