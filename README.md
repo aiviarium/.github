@@ -24,8 +24,8 @@ up under the organisation's settings.
 ## Labels
 
 ```sh
-labels/sync.sh aiviarium/hatchery          # add and update the shared labels
-labels/sync.sh aiviarium/hatchery --prune  # also drop GitHub's defaults that the types replace
+labels/sync.sh aiviarium/rookery          # add and update the shared labels
+labels/sync.sh aiviarium/rookery --prune  # also drop GitHub's defaults that the types replace
 ```
 
 `labels/labels.json` is the list. A repository adds its own `area: …` labels
