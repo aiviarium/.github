@@ -10,6 +10,8 @@ A project has one colour, which its icon, its wordmark and its badges use.
 | Parrot | `#FF6369` | `#D1343B` |
 | Crow | `#8F8FFA` | `#4A4AC8` |
 | Hatchery | `#E879F9` | `#A21CAF` |
+| Heron | `#4FB6F2` | `#0B6FA8` |
+| Sparrow | `#B5D94C` | `#5B7A0E` |
 
 ## What is here
 
